@@ -1,0 +1,103 @@
+---
+title: "Modulo2 - RMarkdown Documento 1"
+author: "Jose Berilo"
+date: "08/01/2022"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Este é um cabeçalho nível 1
+
+## R Markdown
+
+### Este é um cabeçalho nivel 3
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Este é um link para o [Google](http://google.com)
+
+Aqui uma palavra em **negrito** ou outra palavra em __negrito__.
+
+Aqui outra palavra em *itálico* e outra palavra em _itálico_.
+
+Quando compilamos nosso documento usamos `rmarkdown` package.
+
+```
+2 + 2
+mean(c(1,2,3,))
+```
+
+1. Café
+    a. comida
+        i.   ovos
+        ii.  torradas
+        iii. bacon
+    b. bebida
+        i. suco de laranja
+2. Almoço
+    a. taco
+3. Jantar
+    a. frango frito
+    b. brocoles
+    c. alface
+    
+    
+    
+1. Café
+    - comida
+        + ovos
+        + torradas
+        + bacon
+    - bebida
+        + suco de laranja
+2. Almoço
+    - taco
+3. Jantar
+    - frango frito
+    - brocoles
+    - alface
+    
+
+Here is an example of a blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> 1. This is a list inside a block quote.
+> 2. Second item.
+
+
+Here is an example of a nested blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> > Texto indentado.
+
+Here is an example of code in a blockquote:
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+
+   
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
